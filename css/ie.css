@@ -1,0 +1,7 @@
+		#playlist span	{	position:absolute;	bottom:-24px;	right:46px;	
+							display:block;	width:0;	height:0;	
+							border-bottom:24px solid #FFF;
+							border-left:24px solid transparent;
+							border-right:24px solid transparent;}
+		
+		#footer 	{	font-size:14px;}

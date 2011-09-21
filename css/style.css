@@ -1,0 +1,96 @@
+/*CSS Reset*/
+*	{	margin:0;	padding:0;}
+ul 	{	list-style:none;	}
+img	{	border:none;	outline:none;}
+a {	text-decoration:none;}
+a:hover {text-decoration:underline;}
+body	{font-family:Arial;}
+
+.clear-fix 	{	clear:both;}
+#wrapper 	{	width:960px;		margin:0 auto;	
+				box-shadow:0 0 20px #909090; -moz-box-shadow:0 0 20px #909090;	-webkit-box-shadow:0 0 20px #909090;
+				border:1px solid #888;	border-top:none;	margin-bottom:30px;}
+
+#header		{	position:relative;	}
+#header h1 	{	padding-left:40px;	padding-top:20px;}
+	#top-nav 	{	position:absolute;	top:70px;	right:40px;	}
+		#top-nav li 	{	float:left;		padding:0 25px;		border-right:1px solid #165a6d;}
+		#top-nav li a	{	font-size:16px;	color:#165a6d; }
+		#top-nav li.last 	{	border:none;	padding-right:0;	}
+
+	#main-nav {	background: #3688b9; /* Old browsers */
+		background: -moz-linear-gradient(top, #3688b9 0%, #276184 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3688b9), color-stop(100%,#276184)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, #3688b9 0%,#276184 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, #3688b9 0%,#276184 100%); /* Opera11.10+ */
+		background: -ms-linear-gradient(top, #3688b9 0%,#276184 100%); /* IE10+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3688b9', endColorstr='#276184',GradientType=0 ); /* IE6-9 */
+		background: linear-gradient(top, #3688b9 0%,#276184 100%); /* W3C */}
+	#main-nav li	{	display:inline;	height:50px;	padding-left:40px;	padding-right:20px;		}
+	#main-nav li a, #main-nav li {	color:#FFF;		line-height:50px;	font-size:18px;	text-shadow:1px 1px 1px #000;}
+	#main-nav li a.active {	color:#ffd152;	cursor:default;}
+	#main-nav li a:hover.active {	color:#ffd152;}
+	#main-nav li a:hover {		color:#DDD;		text-decoration:none;}
+	
+#content {	padding:40px;	border-bottom:1px solid #888;}
+	#main-content	{	width:640px;	margin-right:20px;		float:left;}
+	#main-content h2, #sidebar h2	{	font-weight:normal;	font-size:20px;		margin-bottom:10px;}
+		#media-section, #sidebar .band	{	margin-bottom:30px;}
+		
+		#playlist 	{	width:310px;	color:#FFF;		position:relative;	float:left;	margin-right:15px;}
+		#playlist h2	{	height:40px;	font-size:20px;		background-color:#276184;	
+						line-height:40px;	padding:0 15px;	text-shadow:1px 1px 1px #000;
+						margin:0;}
+		#playlist li {	padding:0 15px;		height:30px;	line-height:30px;	cursor:pointer;		background-color:#3688b9;}
+		#playlist li.even	{	background-color:#6bb1c4;}
+		#playlist li	a	{	color:#FFF;}
+		#playlist li	a.current	{	color:#ffd152;}
+		#playlist li	a:hover	{	color:#DDD;	text-decoration:none;}
+		#playlist li	a:hover.current	{	color:#ffd152;	cursor:default;}
+		#playlist .more	{	position:absolute;	bottom:-24px;	right:0;
+							display:block;	width:60px;	height:24px;	line-height:24px;	
+							background-color:#e5e5e5;	color:#4c4c4c;	text-align:right;	padding-right:10px;
+							font-size:12px;	text-decoration:none;}
+		#playlist span	{	position:absolute;	bottom:-24px;	right:46px;	
+							display:block;	width:0;	height:0;	
+							border-bottom:24px solid #FFF;
+							border-left:24px solid rgba(255,255,255,0);
+							border-right:24px solid rgba(255,255,255,0);}
+							
+		#player{	float:right;	width:300px;	height:160px;}
+		.featured-album	{	position:relative;	padding:17px 15px;	width:270px;	margin-left:15px;	float:right;
+			background: #e4e4e4; /* Old browsers */
+			background: -moz-linear-gradient(top, #e4e4e4 0%, #bbbbbb 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e4e4e4), color-stop(100%,#bbbbbb)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top, #e4e4e4 0%,#bbbbbb 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top, #e4e4e4 0%,#bbbbbb 100%); /* Opera11.10+ */
+			background: -ms-linear-gradient(top, #e4e4e4 0%,#bbbbbb 100%); /* IE10+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4e4e4', endColorstr='#bbbbbb',GradientType=0 ); /* IE6-9 */
+			background: linear-gradient(top, #e4e4e4 0%,#bbbbbb 100%); /* W3C */}
+		.featured-album img	{	position:absolute;		left:20px;		border:2px solid #FFF;	
+			box-shadow:0 0 5px #909090;		-webkit-box-shadow:0 0 5px #909090;		-moz-box-shadow:0 0 5px #555;}
+		.featured-album .info	{	width:180px;	padding-left:100px;}
+		.featured-album .info h2	{	font-size:14px;	color:#165a6d;}
+		.featured-album .info p	{	font-size:12px;	color:#333;}
+	
+	#sidebar {	width:220px;	margin-left:660px;}
+	#sidebar .band .accordion div	{	width:188px;	padding:10px 15px;	}
+	#sidebar .band .accordion div img	{	border:2px solid #FFF;	box-shadow:0 0 5px #999;	margin-bottom:5px;}
+	#sidebar .band .accordion h2	{	margin-bottom:0;	font-size:18px;		position:relative;}
+	#sidebar .band .accordion h2 span.arrow {	position:absolute;	display:block;	height:0;	width:0;}
+	#sidebar .band .accordion h2.ui-state-active.ui-state-default	span.arrow		{
+		border-top:10px solid #fff;		border-left:10px solid transparent;		border-right:10px solid transparent;	top:15px;	right:10px;}
+	#sidebar .band .accordion h2.ui-state-active	span.arrow		{
+		border-top:10px solid #fff;		border-left:10px solid transparent;		border-right:10px solid transparent;	top:15px;	right:10px;}
+	#sidebar .band .accordion h2.ui-state-default	span.arrow		{
+		border-left:10px solid #fff;		border-top:10px solid transparent;		border-bottom:10px solid transparent;	top:10px;	right:14px;	}
+	#sidebar .band .accordion p	{	font-size:16px;	line-height:20px;}
+#footer 	{	padding:0 40px;		height:60px;	position:relative;}
+#footer 	p	{	text-align:left;		line-height:60px;	color:#484848;}
+#footer .nav		{	position:absolute;	right:40px;		top:0;}
+#footer .nav li 	{	float:left;	}
+#footer .nav li a	{	line-height:60px;	padding:0 10px;		border-right:1px solid #888;	color:#484848;}
+#footer .nav li.last a	 {	border-right:none;}
+
+#social-media 	{	position:absolute;	top:50%;	padding:10px 0;		background-color:#e5e5e5;	border:1px solid #505050;	border-left:none;}
+#social-media img	{	padding:10px;}
