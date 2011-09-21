@@ -6,7 +6,7 @@ a {	text-decoration:none;}
 a:hover {text-decoration:underline;}
 body	{font-family:Arial;}
 
-.clear-fix 	{	clear:both;}
+.clear-fix 	{	clear:both; height:0;width:0;display:block;}
 #wrapper 	{	width:960px;		margin:0 auto;	
 				box-shadow:0 0 20px #909090; -moz-box-shadow:0 0 20px #909090;	-webkit-box-shadow:0 0 20px #909090;
 				border:1px solid #888;	border-top:none;	margin-bottom:30px;}
@@ -27,7 +27,7 @@ body	{font-family:Arial;}
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3688b9', endColorstr='#276184',GradientType=0 ); /* IE6-9 */
 		background: linear-gradient(top, #3688b9 0%,#276184 100%); /* W3C */}
 	#main-nav li	{	display:inline;	height:50px;	padding-left:40px;	padding-right:20px;		}
-	#main-nav li a, #main-nav li {	color:#FFF;		line-height:50px;	font-size:18px;	text-shadow:1px 1px 1px #000;}
+	#main-nav li a, .main-nav li {	color:#FFF;		line-height:50px;	font-size:18px;	text-shadow:1px 1px 1px #000;}
 	#main-nav li a.active {	color:#ffd152;	cursor:default;}
 	#main-nav li a:hover.active {	color:#ffd152;}
 	#main-nav li a:hover {		color:#DDD;		text-decoration:none;}
@@ -37,23 +37,24 @@ body	{font-family:Arial;}
 	#main-content h2, #sidebar h2	{	font-weight:normal;	font-size:20px;		margin-bottom:10px;}
 		#media-section, #sidebar .band	{	margin-bottom:30px;}
 		
-		#playlist 	{	width:310px;	color:#FFF;		position:relative;	float:left;	margin-right:15px;}
-		#playlist h2	{	height:40px;	font-size:20px;		background-color:#276184;	
+		#playlist, #band-playlist 	{	width:310px;	color:#FFF;		position:relative;	float:left;	margin-right:15px;}
+		#playlist h2, #band-playlist h2	{	height:40px;	font-size:20px;		background-color:#276184;	
 						line-height:40px;	padding:0 15px;	text-shadow:1px 1px 1px #000;
 						margin:0;}
-		#playlist li {	padding:0 15px;		height:30px;	line-height:30px;	cursor:pointer;		background-color:#3688b9;}
+		#playlist li,  #band-playlist li {	padding:0 15px;		height:30px;	line-height:30px;	cursor:pointer;		background-color:#3688b9;}
 		#playlist li.even	{	background-color:#6bb1c4;}
-		#playlist li	a	{	color:#FFF;}
-		#playlist li	a.current	{	color:#ffd152;}
-		#playlist li	a:hover	{	color:#DDD;	text-decoration:none;}
-		#playlist li	a:hover.current	{	color:#ffd152;	cursor:default;}
-		#playlist .more	{	position:absolute;	bottom:-24px;	right:0;
+		#band-playlist li.even	{	background-color:#888;}
+		#playlist li a, #band-playlist li a	{	color:#FFF;		height:30px;	display:block;}
+		#playlist li a.current, #band-playlist li a.current	{	color:#ffd152;}
+		#playlist li a:hover, #band-playlist li a:hover	{	color:#DDD;	text-decoration:none;}
+		#playlist li a:hover.current, #band-playlist li a:hover.current	{	color:#ffd152;	cursor:default;}
+		#playlist .more, #band-playlist .more	{	position:absolute;	bottom:-24px;	right:0;
 							display:block;	width:60px;	height:24px;	line-height:24px;	
 							background-color:#e5e5e5;	color:#4c4c4c;	text-align:right;	padding-right:10px;
 							font-size:12px;	text-decoration:none;}
 		#playlist span	{	position:absolute;	bottom:-24px;	right:46px;	
 							display:block;	width:0;	height:0;	
-							border-bottom:24px solid #FFF;
+							border-bottom:24px solid rgba(255,255,255,0);
 							border-left:24px solid rgba(255,255,255,0);
 							border-right:24px solid rgba(255,255,255,0);}
 							
@@ -90,7 +91,113 @@ body	{font-family:Arial;}
 #footer .nav		{	position:absolute;	right:40px;		top:0;}
 #footer .nav li 	{	float:left;	}
 #footer .nav li a	{	line-height:60px;	padding:0 10px;		border-right:1px solid #888;	color:#484848;}
-#footer .nav li.last a	 {	border-right:none;}
+#footer .nav li.last a	 {	border-right:none;	padding-right:0;}
 
-#social-media 	{	position:absolute;	top:50%;	padding:10px 0;		background-color:#e5e5e5;	border:1px solid #505050;	border-left:none;}
+#social-media 	{	display:none;	position:fixed;	top:33%;	padding:10px 0;		background-color:#e5e5e5;	border:1px solid #505050;	border-left:none;}
 #social-media img	{	padding:10px;}
+
+/*band profile*/
+
+#content-internal {		background:#FFF url(../images/band-profile-bg.jpg);
+padding:40px 20px;
+}
+#sidebar-internal {	width:300px;	float:left;		margin-right:20px;	}
+#band_profile_image {	width:300px;}
+#band-controls, #other-controls  {	background:transparent url(../images/semi-transparent.png);}
+#band-controls li, #other-controls  li {	padding:5px;}
+#band-controls a, #other-controls  a{	font-size:13px;	color:#000;	text-decoration:underline;}
+#band-playlist {		width:300px;}
+#band-playlist li{		background-color:#FFF;}
+#band-playlist li a {	color:#888;}
+#band-playlist .even a {	color:#FFF;}
+#band-playlist .song-count {		float:right; margin-right:10px;}
+#other-controls {
+	display:none;
+}
+#band-details {
+	background:url(../images/semi-transparent.png);
+	width:560px;
+	padding:20px;
+	position:relative;
+	margin-left:320px;
+	}
+#band-details #become-a-fan{
+	position:absolute;
+	top:25px;
+	right:20px;
+	background-color:#276184;
+	color:#FFF;
+	padding:5px 10px;
+	cursor:pointer;
+}
+#band-details h2{
+	font-size:48px;
+	font-weight:normal;
+	text-shadow:2px 2px 0 #FFF;
+}
+#band-details-table {
+	margin-top:20px;
+}
+#band-details-table tr{
+	height:30px;
+}
+#band-details-table tr td {
+	vertical-align:top;
+}
+#band-details-table tr td.label {
+	width:150px;
+	font-weight:bold;
+	text-align:right;
+	padding-right:20px;
+}
+#band-gigs {
+	margin-top:20px;
+}
+#band-gigs h2{
+	font-size:28px;
+	margin-bottom:20px;
+	background-color:#276184;
+	width:560px;
+	position:absolute;
+	left:0;
+	padding:10px 20px;
+	color:#FFF;
+	text-shadow:none;
+}
+#band-gigs li{
+	border-bottom:2px solid #276184;
+	margin-bottom:20px;
+}
+#band-gigs li img {
+	width:100px;
+	margin-right:20px;
+	float:left;
+}
+#band-gigs li .description {
+	margin-left:120px;
+	margin-bottom:20px;
+}
+#band-gigs li.first  {
+	padding-top:80px;
+}
+#band-gigs li.last  {
+	margin-bottom:10px;
+}
+#band-gigs a.more {
+	display:block;
+	text-align:center;
+	font-size:12px;
+	color:#276184;
+	text-decoration:underline;
+}
+
+
+
+
+
+
+
+
+
+
+
