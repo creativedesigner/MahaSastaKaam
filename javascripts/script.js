@@ -9,5 +9,5 @@ $(function() {
 	$('li:first-child').addClass('first');
 	$('li:last-child').addClass('last');
 	$('li:nth-child(2n)').addClass('even');
-	$('#band-details-table tr td:first-child').addClass('label');
+	$('tr td:first-child').addClass('label');
 })
