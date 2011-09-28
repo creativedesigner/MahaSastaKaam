@@ -11,7 +11,7 @@
 		<link rel="stylesheet" type="text/css" href="css/ie.css" media="all"/>
 	<![endif]-->
 	
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script type="text/javascript" src="javascripts/jquery.js"></script>
 	<script type="text/javascript" src="javascripts/jquery-ui-1.8.16.custom.min.js"></script>
 	<script type="text/javascript" src="javascripts/text-overflow.min.js"></script>
 	
@@ -28,7 +28,12 @@
 			<ul class="main-nav">
 				<li><a href="#Home.aspx" class="active">Home</a></li>		<!--Selected Link will not be a link anymore-->
 				<li><a href="#AboutUs.aspx">About Us</a></li>
-				<li><a href="#EventMaps.aspx?eventid=1">Events</a></li>
+				<li class="popout"><a href="#EventMaps.aspx?eventid=1">Events</a>
+				<ul class="dynamic" id="MainMenu:submenu:3">
+					<li role="menuitem" class="dynamic"><a href="#EventMaps.aspx?eventid=1" tabindex="-1">Illumnia</a></li>
+					<li role="menuitem" class="dynamic"><a href="#EventMaps.aspx?eventid=1" tabindex="-1">Illumnia</a></li>
+				</ul>
+				</li>
 				<li><a href="#Contact.aspx">Contact us</a></li>
 				<li class="search"><a href="#Search.aspx">Search</a></li>
 			</ul>

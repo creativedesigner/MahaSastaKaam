@@ -32,5 +32,13 @@ $(function() {
 		
 	});
 	
+	$('.main-nav .popout').mouseenter(function() {
+		$('ul',this).fadeIn();
+	});
+	
+	$('.main-nav .popout').mouseleave(function() {
+		setTimeout("$('.main-nav .popout ul').fadeOut()",500);
+	});
+	
 	
 })
