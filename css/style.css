@@ -177,15 +177,15 @@ padding:0 15px;
 font-size:14px;
 line-height:24px;
 }
-#playlist li a, #band-playlist li a, , #event-list  li a	{
+#playlist li a, #band-playlist li a, #event-list  li a	{
 color:#FFF;
 height:30px;
 display:block;
 }
-#playlist li a.current, #band-playlist li a.current, , #event-list  li a.selected	{
+#playlist li a.current, #band-playlist li a.current, #event-list  li a.selected	{
 color:#ffd152;
 }
-#playlist li a:hover, #band-playlist li a:hover, , #event-list li a:hover	{
+#playlist li a:hover, #band-playlist li a:hover, #event-list li a:hover	{
 color:#DDD;
 text-decoration:none;
 }
