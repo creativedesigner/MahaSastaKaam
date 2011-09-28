@@ -392,7 +392,7 @@ margin-right:10px;
 #other-controls {
 display:block;
 }
-#band-details, #event-details {
+#band-details, #event-details, #content-internal .content {
 background:url(images/semi-transparent.png);
 width:560px;
 padding:20px;
@@ -503,10 +503,120 @@ text-decoration:underline;
 	background-color:#3688B9;
 	color:#FFF;
 }
+#content-internal.search {
+	padding:0;
+}
+#search-bar .panel{
+	padding:20px;
+	background-color:#EEE;
+}
+#search-bar .search-tip{
+	font-size:12px;
+	padding:5px 20px 5px 30px;
+	line-height:15px;
+	color:#555;
+	background:#fcdf8f url(images/search-tip.png) no-repeat 5px 0;
+	position:relative;
+	
+}
+#search-bar .search-tip span.close {
+	position:absolute;
+	right:5px;
+	color:#9d7a1a;
+	cursor:pointer;
+	font-weight:bolder;
+}
+#search-bar form input[type=text] {
+	line-height:18px;
+	color:#888;
+	padding:2px 5px;
+}
+#search-bar .panel input[type=radio] {
+	display:none;
+}
 
+#search-results, #search-results-wrapper{
+	padding:20px;
+}
+#search-filters li{
+	display:inline;
+}
+#search-filters li a{
+	padding:10px;
+	background-color:#FFF;
+	font-size:14px;
+	color:#000;
+}
+#search-filters li a:hover{
+	text-decoration:none;
+}
+#search-filters li a.active{
+	background-color:#EEE;
+	color:#555;
+}
 
+#search-results-wrapper .note{
+	background-color:#EEE;
+	margin-top:10px;
+	padding:20px;
+	margin-bottom:0;
+	font-size:14px;
+	color:#555;
+	display:none;
+}
+#search-results{
+	background-color:#EEE;
+	margin-top:10px;
+	float:left;
+	display:none;
+	width:880px;
+	display:block;
+}
+#search-results li {
+	width:430px;
+	display:block;
+	float:left;
+	margin-right:10px;
+	margin-bottom:20px;
+	font-size:14px;
+}
+#search-results li h2 a {
+	font-size:18px;
+	clear:left;
+	display:block;
+	float:none;
+}
+#search-results li p {
+	color:#888;
+}
+#search-results li a {
+	font-size:14px;
+	color:#3688B9;
+	margin-right:10px;
+	float:left;
+}
+#search-results li span{
+	margin-right:10px;
+	float:left;
+}
+#search-results li img {
+	margin-right:10px;
+	float:left;
+}
 
+#search-results li .right {
+	float:right;
+}
+#search-results li .left {
+	float:left;
+}
 
+#search-results li .fans {
+	display:block;
+	float:left;
+	width:255px;
+	
+}
 
 
 
