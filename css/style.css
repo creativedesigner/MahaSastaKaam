@@ -222,10 +222,15 @@ display:block;
 #playlist li a.current, #band-playlist li a.current, #user-playlist li a.current, #event-list  li a.selected	{
 color:#ffd152;
 }
-#playlist li a:hover, #band-playlist li a:hover, #user-playlist li a:hover, #event-list li a:hover	{
+#playlist li a:hover, #band-playlist li.even a:hover, #user-playlist li.even a:hover, #event-list li.even a:hover	{
 color:#DDD;
 text-decoration:none;
 }
+#band-playlist li a:hover, #user-playlist li a:hover, #event-list li a:hover	{
+color:#333;
+text-decoration:none;
+}
+
 #playlist li a:hover.current, #user-playlist li a:hover.current,  #band-playlist li a:hover.current,  #event-list li a:hover.selected	{
 color:#ffd152;
 cursor:default;
@@ -670,9 +675,22 @@ text-decoration:underline;
 	background:transparent url(images/semi-transparent.png);
 	display:block;
 }
-a.edit {
+a.edit.user_profile_image:hover {
+	color:#276184;
+}
+a.edit.user_profile_image {
 	position:absolute;
 	display:block;
-	
+	top:0;
+	height:30px;
+	text-align:center;
+	color:#3688B9;
+	font-size:14px;
+	font-weight:bold;
+	line-height:14px;
 }
+.edit-wrap {
+	position:relative;
+}
+
 

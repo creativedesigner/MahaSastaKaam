@@ -40,5 +40,8 @@ $(function() {
 		setTimeout("$('.main-nav .popout ul').fadeOut()",500);
 	});
 	
-	
+	$('a.edit.user_profile_image').click(function(){
+		$('#content-internal.edit input[type=file]').click();
+		return false;
+	});
 })

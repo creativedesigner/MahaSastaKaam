@@ -42,14 +42,14 @@
 		<div id="content-internal" class="edit">
 			<form action="#">
 				<div id="sidebar-internal">
-					<div class="edit">
+					<div class="edit-wrap">
 						<img src="css/images/user-profile-thumb.jpg" alt="User profile image" class="edit user_profile_image"/>
-						<input type="file"/>
+						<input type="file" id="user_profile_image"/>
 						<a href="#" class="edit user_profile_image transparent">Upload new image</a>
 					</div>
 					
 					<ul id="user-controls">
-						<li><a href="#">Edit this page</a></li>
+						<li><a href="#">Back to User profile</a></li>
 					</ul>
 					
 					<ul id="other-controls">
@@ -73,74 +73,101 @@
 				</div>
 				
 				<div id="user-details">
-					<h2>Hi, user name</h2>
-					<div id="become-a-fan">Become a fan</div>
-					
-					<table id="user-details-table">
+										
+					<table id="user-details-table" class="edit">
+						
 						
 						<tr>
 							<td>Status: </td>
-							<td>Lorem ipsum dolor sit amet</td>
+							<td><input type="text" id="user_status" name="user_status" size="53"/></td>
 						</tr>
 						
 						<tr>
 							<td>First name: </td>
-							<td>Lorem</td>
+							<td><input type="text" id="user_first_name" name="user_first_name" size="53"/></td>
 						</tr>
 						
 						<tr>
 							<td>Last name: </td>
-							<td>Lorem ipsum dolor sit amet</td>
+							<td><input type="text" id="user_last_name" name="user_last_name" size="53"/></td>
 						</tr>
+						
 						<tr>
 							<td>Gender: </td>
-							<td>Lorem ipsum dolor sit amet</td>
+							<td>
+								<select name="user_gender" id="user_gender">
+									<option value="">Choose..</option>
+									<option value="1">Male</option>
+									<option value="2">Female</option>
+								</select>
+							</td>
 						</tr>
 						
 						<tr>
 							<td>Band Affiliation: </td>
-							<td>Lorem ipsum dolor sit amet</td>
+							<td><input type="text" id="user_band_affiliation" name="user_band_affiliation" size="53"/></td>
 						</tr>
 						
 						<tr>
 							<td>Country: </td>
-							<td>Lorem ipsum dolor sit amet</td>
+							<td>
+								<select name="user_country" id="user_country">
+									<option value="">Choose..</option>
+									<option value="1">Afganistan</option>
+									<!-- populate rest countries through loop -->
+								</select>
+							</td>
 						</tr>
 						
 						<tr>
 							<td>City: </td>
-							<td>Lorem ipsum dolor sit amet</td>
+							<td><select name="user_city" id="user_city">
+									<option value="">Choose..</option>
+									<option value="1">Kabul</option>
+									<!-- populate rest countries through loop -->
+								</select></td>
 						</tr>
 						
 						<tr>
 							<td>Member Since: </td>
-							<td>Lorem ipsum dolor sit amet</td>
+							<td>
+								<input type="text" id="user_member_since" name="user_member_since" size="53"/>
+							</td>
 						</tr>
 						
 						<tr>
 							<td>Last visited: </td>
-							<td>Lorem ipsum dolor sit amet</td>
+							<td><input type="text" id="user_last_visited" name="user_last_visited" size="53"/></td>
 						</tr>
 						
 						<tr>
 							<td>About me: </td>
-							<td>Lorem ipsum dolor sit amet, valde gemino filium suum Tharsiae virginibus in fuerat construeret in lucem in fuerat. Caelum ad per te ad nomine. Dicere nec benedictus ad te. Nescimus de ascendit deferunt provoces Athenagora mihi quidditas mihi quidditas iter indica enim. Opto cum unde ascendit in fuerat accidens suos ut casus inferioribus civitatis in.</td>
+							<td>
+								<textarea name="user_about_me" id="user_about_me" cols="40" rows="25"></textarea>
+							</td>
 						
 						</tr>
-						
-						<tr>
-							<td>Contact number: </td>
-							<td>Lorem ipsum dolor sit amet</td>
-						</tr>
-						
+							<td>Contact number</td>
+							<td>
+								<input size="53" type="text" id="user_contact"/>
+							</td>
 						<tr>
 							<td>Address line 1: </td>
-							<td>Lorem ipsum dolor sit amet</td>
+							<td><input type="text" id="user_address_line_1" name="user_address_line_1" size="53"/></td>
 						</tr>
 						
 						<tr>
 							<td>Address line 2: </td>
-							<td>Lorem ipsum dolor sit amet</td>
+							<td><input type="text" id="user_address_line_2" name="user_address_line_2" size="53"/></td>
+						</tr>
+						
+						<tr>
+							<td>&nbsp;</td>
+							<td>
+								<input type="submit" value="Save"/>
+								<input type="reset" value="Reset"/>
+								
+							</td>
 						</tr>
 						
 						
