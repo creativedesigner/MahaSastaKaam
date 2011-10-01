@@ -23,7 +23,6 @@
 	<script type="text/javascript" src="javascripts/script.js"></script>
 </head>
 <body>
-	
 	<div id="wrapper">
 		<div id="header">
 			<h1><img src="css/images/logo.png" alt="Swartantr Logo"/></h1>
@@ -43,20 +42,20 @@
 			<form action="#">
 				<div id="sidebar-internal">
 					<div class="edit-wrap profile_image">
-						<img src="css/images/user-profile-thumb.jpg" alt="User profile image" class="edit user_profile_image"/>
-						<input type="file" id="user_profile_image"/>
-						<a href="#" class="edit user_profile_image transparent">Upload new image</a>
+						<img src="css/images/band-profile-thumb.jpg" alt="Band profile image" class="edit band_profile_image"/>
+						<input type="file" id="band_profile_image"/>
+						<a href="#" class="edit band_profile_image transparent">Upload new image</a>
 					</div>
 					
-					<ul id="user-controls">
-						<li><a href="#">Back to User profile</a></li>
+					<ul id="band-controls">
+						<li><a href="#">Back to band profile</a></li>
 					</ul>
 					
 					<ul id="other-controls">
 						<li><a href="#">FB like</a></li>
 					</ul>
 					
-					<div id="user-playlist">
+					<div id="band-playlist">
 						<h2>Our Songs</h2>
 						<ul>
 							<li><a href="#">Song 1 <span class="song-count">30</span></a></li>
@@ -72,111 +71,65 @@
 					</div>
 				</div>
 				
-				<div id="user-details">
-										
-					<table id="user-details-table" class="edit">
-						
+				<div id="band-details">
+					
+					<table id="band-details-table" class="edit">
 						
 						<tr>
-							<td>Status: </td>
-							<td><input type="text" id="user_status" name="user_status" size="53"/></td>
+							<td>Band Status: </td>
+							<td><input type="text" id="band_status" name="band_status" size="53"/></td>
 						</tr>
 						
 						<tr>
-							<td>First name: </td>
-							<td><input type="text" id="user_first_name" name="user_first_name" size="53"/></td>
+							<td>Member since: </td>
+							<td><input type="text" id="band_member_since" name="band_member_since" size="53"/></td>
 						</tr>
 						
 						<tr>
-							<td>Last name: </td>
-							<td><input type="text" id="user_last_name" name="user_last_name" size="53"/></td>
+							<td>Genre: </td>
+							<td><input type="text" id="band_genre" name="band_genre" size="53"/></td>
 						</tr>
 						
 						<tr>
-							<td>Gender: </td>
+							<td>About us: </td>
 							<td>
-								<select name="user_gender" id="user_gender">
-									<option value="">Choose..</option>
-									<option value="1">Male</option>
-									<option value="2">Female</option>
-								</select>
+								<textarea name="band_about_us" id="band_about_us" cols="40" rows="25"></textarea>
 							</td>
 						</tr>
-						
-						<tr>
-							<td>Band Affiliation: </td>
-							<td><input type="text" id="user_band_affiliation" name="user_band_affiliation" size="53"/></td>
-						</tr>
-						
-						<tr>
-							<td>Country: </td>
-							<td>
-								<select name="user_country" id="user_country">
-									<option value="">Choose..</option>
-									<option value="1">Afganistan</option>
-									<!-- populate rest countries through loop -->
-								</select>
-							</td>
-						</tr>
-						
-						<tr>
-							<td>City: </td>
-							<td><select name="user_city" id="user_city">
-									<option value="">Choose..</option>
-									<option value="1">Kabul</option>
-									<!-- populate rest countries through loop -->
-								</select></td>
-						</tr>
-						
-						<tr>
-							<td>Member Since: </td>
-							<td>
-								<input type="text" id="user_member_since" name="user_member_since" size="53"/>
-							</td>
-						</tr>
-						
-						<tr>
-							<td>Last visited: </td>
-							<td><input type="text" id="user_last_visited" name="user_last_visited" size="53"/></td>
-						</tr>
-						
-						<tr>
-							<td>About me: </td>
-							<td>
-								<textarea name="user_about_me" id="user_about_me" cols="40" rows="25"></textarea>
-							</td>
-						
-						</tr>
-						<tr>
-							<td>Contact number</td>
-							<td>
-								<input size="53" type="text" id="user_contact"/>
-							</td>
-						</tr>	
-						<tr>
-							<td>Address line 1: </td>
-							<td><input type="text" id="user_address_line_1" name="user_address_line_1" size="53"/></td>
-						</tr>
-						
-						<tr>
-							<td>Address line 2: </td>
-							<td><input type="text" id="user_address_line_2" name="user_address_line_2" size="53"/></td>
-						</tr>
-						
-						<tr>
-							<td>&nbsp;</td>
-							<td>
-								<input type="submit" value="Save"/>
-								<input type="reset" value="Reset"/>
-								
-							</td>
-						</tr>
-						
 						
 					</table>
 					
-					
-					
+					<div id="band-gigs">
+						<h2>Our Gigs</h2>
+						<ul>
+							<li>
+								<div class="edit-wrap">
+									<img src="css/images/gig-image-1.jpg" alt="" class="edit band-gig"/>
+									<input type="file" id="band-gig-1" name="band-gig-1"/>
+									<a href="#" class="edit band-gig transparent">Edit image</a>
+								</div>
+								
+								<div class="description">
+									<textarea name="gig-description[]" id="gig-description-1" cols="40" rows="10"></textarea>
+								</div>
+							</li>
+							
+							<li>
+								<div class="edit-wrap">
+									<img src="css/images/gig-image-1.jpg" alt="" class="edit band-gig"/>
+									<input type="file" id="band-gig-2" name="band-gig-2"/>
+									<a href="#" class="edit band-gig transparent">Edit image</a>
+								</div>
+								
+								<div class="description">
+									<textarea name="gig-description[]" id="gig-description-1" cols="40" rows="10"></textarea>
+								</div>
+							</li>
+							
+						</ul>
+						<input type="submit" value="Save"/>
+						<input type="reset" value="Reset"/>
+					</div>
 					<p class="clear-fix">&nbsp;</p>
 				</div>
 				

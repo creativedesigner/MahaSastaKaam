@@ -40,8 +40,23 @@ $(function() {
 		setTimeout("$('.main-nav .popout ul').fadeOut()",500);
 	});
 	
-	$('a.edit.user_profile_image').click(function(){
-		$('#content-internal.edit input[type=file]').click();
+	$('a.edit.user_profile_image, a.edit.band_profile_image').click(function(){
+		$('#content-internal.edit .edit-wrap.profile_image input[type=file]').click();
 		return false;
 	});
+	
+	$('#band-gigs ul li').each(function() {
+		var li_elem = this;
+		$('.edit-wrap a.edit.band-gig',this).click(function() {
+			$('input[type=file]',li_elem).click();
+			return false;
+		});
+	});
+	
+	
 })
+
+function log(val) {
+	try {console.log(val)}
+	catch(e){}
+}

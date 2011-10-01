@@ -675,10 +675,10 @@ text-decoration:underline;
 	background:transparent url(images/semi-transparent.png);
 	display:block;
 }
-a.edit.user_profile_image:hover {
+a.edit.user_profile_image:hover, a.edit.band_profile_image:hover, a.edit.band-gig:hover {
 	color:#276184;
 }
-a.edit.user_profile_image {
+a.edit.user_profile_image, a.edit.band_profile_image, a.edit.band-gig {
 	position:absolute;
 	display:block;
 	top:0;
@@ -688,6 +688,9 @@ a.edit.user_profile_image {
 	font-size:14px;
 	font-weight:bold;
 	line-height:14px;
+}
+a.edit.band-gig {
+	width:100px;
 }
 .edit-wrap {
 	position:relative;
