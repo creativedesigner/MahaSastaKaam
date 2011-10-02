@@ -763,3 +763,30 @@ a.edit.band-gig {
 .error {
 	color:#993232;
 }
+#content-internal.about, #content-internal.privacy {
+	margin:20px 20px;
+}
+#content-internal.about h2, #content-internal.privacy h2{
+	margin-bottom:10px;
+}
+
+#content-internal.about h3, #content-internal.privacy h3 {
+	background-color:#3688B9;
+	padding:5px;
+	color:#FFF;
+	margin-bottom:10px;
+	text-shadow:1px 1px 0 #000;
+}
+#content-internal.about p, #content-internal.about ol, #content-internal.privacy p, #content-internal.privacy ol {
+	line-height:20px;
+	margin-bottom:10px;
+}
+#content-internal.privacy ol {
+	list-style:none;
+}
+#content-internal.about ol  li{
+	margin-left:40px;
+}
+#content-internal.privacy ol  li{
+	margin-left:0px;
+}
