@@ -39,15 +39,59 @@
 			</ul>
 		</div>
 		
-		<div id="content-internal">
+		<div id="content-internal" class="signup">
 		
-			<div id="sidebar-internal">
+			<div id="signup-form">
+				<h2>Registration Page</h2>
+				<h3>Already a member? <a href="#Login">Login here</a></h3>
+				<form action="#">
+					<div class="form">
+					
+						<label for="user_type">Register as</label>
+						<select name="user_type" id="user_type">
+							<option value="">Choose..</option>
+							<option value="1">User</option>
+							<option value="2">Musician/Band</option>
+						</select>
+						<p class="message">&nbsp;</p>
+						
+						<label for="email" class="required">Email</label>
+						<input type="text" id="email"/>
+						<p class="message">&nbsp;</p>
+						
+						<label for="user_name" class="required">First Name</label>
+						<input type="text" id="user_name"/>
+						<p class="message">&nbsp;</p>
+						
+						<label for="user_last_name">Last Name</label>
+						<input type="text" id="user_last_name"/>
+						<p class="message">&nbsp;</p>
+						
+						<label for="user_band_name" class="required">Band Name</label>
+						<input type="text" id="user_band_name"/>
+						<p class="message">&nbsp;</p>
+						
+						<label for="user_password" class="required">Password</label>
+						<input type="text" id="user_password"/>
+						<p class="message">&nbsp;</p>
+						
+						<label for="user_confirm_password" class="required">Password</label>
+						<input type="text" id="user_confirm_password"/>
+						<p class="message">&nbsp;</p>
+						
+						<label for="user_city">Select City</label>
+						<input type="text" id="user_city"/>
+						<p class="message">&nbsp;</p>
+						
+						<label for="submit">&nbsp;</label>
+						<input type="submit" value="Register" id="submit"/>
+						
+					</div>
+				</form>
 				
 			</div>
 			
-			<div id="band-details" class="content">
-				
-			</div>
+			
 		
 		</div>
 		

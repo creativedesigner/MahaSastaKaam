@@ -53,7 +53,10 @@ $(function() {
 		});
 	});
 	
+	$('label.required').append(' *');
 	
+	$('#band-details #our_fans li:nth-child(6n)').addClass('row-last');
+	//$('#band-details #our_fans li:nth-child(6n-5)').addClass('row-first');
 })
 
 function log(val) {

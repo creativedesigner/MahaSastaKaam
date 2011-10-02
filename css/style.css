@@ -437,6 +437,27 @@ margin-right:10px;
 #other-controls {
 display:block;
 }
+
+#band-details.fan-list h3{
+	margin-top:10px;
+}
+#band-details #our_fans {
+	margin-top:20px;
+}
+#band-details #our_fans li.row-last{
+	margin-right:0;
+	display:block;
+}
+#band-details #our_fans li{
+	float:left;
+	margin-right:30px;
+	width:64px;
+	margin-bottom:20px;
+}
+#band-details #our_fans li a{
+	color:#276184;
+	font-size:12px;
+}
 #user-details, #band-details, #event-details, #content-internal .content {
 background:url(images/semi-transparent.png);
 width:560px;
@@ -696,36 +717,46 @@ a.edit.band-gig {
 	position:relative;
 }
 
-#login-panel {
+#login-panel, #signup-form {
 	width:400px;
 	margin:20px auto;
 	border:1px solid #DDD;
 }
 
-#login-panel h2 {
-	background-color:#DDD;
+#login-panel h2, #signup-form h2 {
+	background-color:#3688B9;
 	padding:10px;
 	font-weight:normal;
-	color:#555;
+	color:#FFF;
 }
-#login-panel .form {
+#signup-form h3 {
+	background-color:#fcdf8f;
+	padding: 5px 10px;
+	color:#9d7a1a;
+	font-weight:normal;
+	font-size:12px;
+}
+#signup-form h3 a {
+	color:#3688B9;
+}
+#login-panel .form, #signup-form .form {
 	padding:20px;
 }
-#login-panel .form label {
+#login-panel .form label, #signup-form .form label {
 	display:block;
 	width:150px;
 	font-size:12px;
 	color:#888;
 }
-#login-panel .form input[type=text], #login-panel .form input[type=password] {
+#login-panel .form input[type=text], #login-panel .form input[type=password], #signup-form .form input[type=text], #signup-form .form input[type=password] {
 	padding:10px;
 	width:300px;
 }
-#login-panel .form p.message {
+#login-panel .form p.message, #signup-form .form p.message {
 	margin-bottom:10px;
 	font-size:12px;
 }
-#login-panel .form a {
+#login-panel .form a, #signup-form .form a {
 	color:#3688B9;
 	font-size:12px;
 }
