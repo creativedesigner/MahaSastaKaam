@@ -39,13 +39,33 @@
 			</ul>
 		</div>
 		
-		<div id="content-internal">
-		
-			<div id="sidebar-internal">
-				
-			</div>
+		<div id="content-internal" class="login">
 			
-			<div id="band-details" class="content">
+			<div id="login-panel">
+				<h2>Login</h2>
+				
+				<div class="form">
+					<label for="user_name">Username/Email</label>
+					<input type="text" id="user_name"/>
+					<p class="message">&nbsp;</p>
+					
+					<label for="user_password">Password</label>
+					<input type="password" id="user_password"/>
+					<p class="message error">&nbsp;</p>
+					
+					<label for="login-actions">&nbsp;</label>
+					<div id="login-actions">
+						<input type="submit" value="Login"/>
+						<input type="submit" value="Forgot Password"/>
+					</div>
+					
+					<label for="login-extra-actions">&nbsp;</label>
+					<div id="login-extra-actions">
+						<a href="#" class="signup">Create free account</a>
+						<br/>
+						<a href="#" class="signup">Validate login ID</a>
+					</div>
+				</div>
 				
 			</div>
 		
